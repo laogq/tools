@@ -3,17 +3,11 @@ package com.anvy.tools.module.user.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.Version;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * <p>
- * 
- * </p>
- *
  * @author jobob
  * @since 2019-11-22
  */
@@ -27,6 +21,9 @@ public class User {
     @TableId("ID")
     private Long id;
 
+    @TableField(exist = false)
+    private String token;
+
     @TableField(value = "NAME")
     private String name;
 
@@ -35,6 +32,9 @@ public class User {
 
     @TableField("EMAIL")
     private String email;
+
+    @TableField(exist = false)
+    private String originPassword;
 
     @TableField("PASSWORD")
     private String password;

@@ -18,4 +18,6 @@ public interface IUserService extends IService<User> {
     ResultVo login(User user);
 
     ResultVo register(User user);
+
+    ResultVo passwdModify(User user);
 }

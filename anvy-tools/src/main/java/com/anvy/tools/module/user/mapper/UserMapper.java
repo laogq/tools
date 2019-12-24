@@ -6,10 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.context.annotation.Bean;
 
 /**
- * <p>
- *  Mapper 接口
- * </p>
- *
  * @author jobob
  * @since 2019-11-22
  */
